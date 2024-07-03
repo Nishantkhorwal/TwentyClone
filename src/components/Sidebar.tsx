@@ -45,7 +45,7 @@ const Sidebar: React.FC<SidebarProps> = ({ open, toggleSidebar, openCommandBar }
             <h1>Task</h1>
           </li>
           <li className="text-gray-500 mb-3">Workspace</li>
-          <Link href='/people' className="cursor-pointer">
+          <Link href='/People' className="cursor-pointer">
             <li className="flex flex-row justify-start text-gray-100 hover:bg-gray-900 items-center cursor-pointer px-4 ">
               <IoPersonOutline className="me-3" />
               <h1>People</h1>
