@@ -1,6 +1,5 @@
 "use client"
 import Image from "next/image";
-import Main from './main/page';
 import Sidebar from "@/components/Sidebar";
 import React,{useState} from "react";
 import { CgMoveRight } from "react-icons/cg";
