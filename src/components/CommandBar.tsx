@@ -34,7 +34,7 @@ const CommandBar = () => {
     return () => {
       document.removeEventListener('keydown', handleKeyDown);
     };
-  }, []);
+  }, [toggleCommandBar]);
 
   
 

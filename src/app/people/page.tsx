@@ -6,7 +6,7 @@ import Table from '@/components/Table';
 import CommandBar from '@/components/CommandBar';
 
 
-const people: React.FC = () => {
+const People: React.FC = () => {
   const [open, setOpen] = useState(false);
   const [commandBarOpen, setCommandBarOpen] = useState(false); 
 
@@ -38,4 +38,4 @@ const people: React.FC = () => {
     );
   };
 
-export default people
+export default People
