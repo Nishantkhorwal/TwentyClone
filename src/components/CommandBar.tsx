@@ -13,6 +13,13 @@ const CommandBar = () => {
     { id: 'companies', name: 'Companies' },
     { id: 'tasks', name: 'Create Task' },
   ];
+  const toggleCommandBar = () => {
+    setIsOpen(!isOpen);
+    if (!isOpen) {
+      setSearchTerm('');
+      setSearchResults([]);
+    }
+  };
 
   useEffect(() => {
     const handleKeyDown = (event: KeyboardEvent) => {
@@ -29,13 +36,7 @@ const CommandBar = () => {
     };
   }, []);
 
-  const toggleCommandBar = () => {
-    setIsOpen(!isOpen);
-    if (!isOpen) {
-      setSearchTerm('');
-      setSearchResults([]);
-    }
-  };
+  
 
   const handleSearch = (event: React.ChangeEvent<HTMLInputElement>) => {
     const { value } = event.target;
